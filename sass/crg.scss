@@ -9,8 +9,13 @@
 
 pre > code.language-cmd {
   display: block;
-  color: darken(#fff, 10%);
-  background-color: lighten(#000, 20%);
+  @media screen {
+    color: darken(#fff, 10%);
+    background-color: lighten(#000, 20%);
+  }
+  @media print {
+    background-color: #E2E2E2; 
+  }
 }
 
 dt, th.tableblock, td.content, div.footnote {
