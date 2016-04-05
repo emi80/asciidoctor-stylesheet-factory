@@ -3,6 +3,16 @@
 @import "components/asciidoc";
 @import "components/awesome-icons";
 
+.crg {
+  color: $header-font-color;
+}
+
+pre > code.language-cmd {
+  display: block;
+  color: darken(#fff, 10%);
+  background-color: lighten(#000, 20%);
+}
+
 dt, th.tableblock, td.content, div.footnote {
   // NOTE text-rendering is already set for p
   text-rendering: optimizeLegibility;
